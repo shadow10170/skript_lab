@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dokumento aprašymas 7 lab">
+    <meta name="author" content="Augustas Tamasiunas">
+    <title>LAb 8</title>
+    <link rel="stylesheet" href="stilius.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html" target="_blank" aria-label="Home">
+                <i class="fa fa-home"></i>
+            </a>
+            <nav id="navmenu">
+            <ul>
+                <li><a href="#about">Apie</a></li>
+                <li><a href="#resume">Aprašymas</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Paslaugos</a></li>
+                <li><a href="#Kontaktai">Kontaktai</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+    <section id="about">
+    </form>
+    </section>
+    <section id="resume">
+        <h1>Aprašymas</h1>
+        <p>
+            Gauss-Ostrogradski teorema (divergencijos teorema) yra fundamentali matematinės analizės formulė, 
+            naudojama fizikoje ir inžinerijoje, susiejanti tūrio integralą ir paviršiaus integralą. Formulė pateikiama žemiau:
+        </p>
+        <div class="formula" style="text-align:center; font-size: 1.5em; margin: 20px 0;">
+            $$\int_{D} (\nabla \cdot \mathbf{F}) \, dV = \int_{\partial D} \mathbf{F} \cdot \mathbf{n} \, dS$$
+        </div>
+            </section>
+            <div class="svg-container" style="text-align:center; margin: 20px;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" width="300" height="150" role="img" aria-label="Divergencijos teoremos piešinys">
+                    <rect x="0" y="0" width="250" height="150" fill="#F0F8FF" />
+                    
+                    <text x="15" y="80" fill="#000" font-size="20" font-family="Arial">
+                        ∫
+                    </text>
+                    <text x="17" y="90" fill="#000" font-size="10" font-family="Arial">
+                        D
+                    </text>
+                    <text x="30" y="80" fill="#000" font-size="20" font-family="Arial">
+                        (∇ ⋅ F) dV =
+                    </text>
+                    
+
+                    <text x="140" y="80" fill="#000" font-size="20" font-family="Arial">
+                        ∫
+                    </text>
+                    <text x="143" y="90" fill="#000" font-size="10" font-family="Arial">
+                        ∂D
+                    </text>
+                    <text x="163" y="80" fill="#000" font-size="20" font-family="Arial">
+                        F ⋅ n dS
+                    </text>
+                </svg>
+            
+
+        <p>
+            Čia:
+            <ul>
+                <li>\(D\) – tūris, per kurį skaičiuojamas integralas.</li>
+                <li>\(\nabla \cdot \mathbf{F}\) – vektoriaus \(\mathbf{F}\) divergencija.</li>
+                <li>\(\partial D\) – tūrio \(D\) paviršius.</li>
+                <li>\(\mathbf{n}\) – paviršiaus normalinis vienetinis vektorius.</li>
+            </ul>
+        </p>
+    </section>
+    <section id="portfolio">
+        <h1>Portfolio</h1> 
+        <img src="Photos/Ciupapi.png" alt="" width="700" height="500">
+        <img src="Photos/meme1.jpg" alt="" width="500" height="700">
+        <img src="Photos/meme2.jpg" alt="" width="500" height="700">
+        <img src="Photos/meme3.jpg" alt="" width="500" height="700">
+    </section>
+    <section id="services">
+        <h1>Paslaugos</h1>
+        <video src="Photos/video.mp4" type="video/webm" controls></video>
+        <iframe width="500" height="400" src="https://youtu.be/dQw4w9WgXcQ?si=ivda0XMUn_UnGYRU"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=c1Hz0atuFjAYGn3G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <audio src="Photos/video.mp4" type ="audio" controls></audio>
+    </section>
+    <section id="Kontaktai">
+        <h1>Kontaktai</h1>
+        <h2>Kontaktų Forma</h2>
+    <form id="contactForm">
+    <!-- Pagrindiniai duomenys -->
+    <label for="name">Vardas:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="surname">Pavardė:</label>
+    <input type="text" id="surname" name="surname" required><br>
+
+    <label for="email">El. paštas:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="phone">Telefono numeris:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+
+    <label for="address">Adresas:</label>
+    <input type="text" id="address" name="address" required><br>
+
+    <!-- Klausimai su balų įvertinimu -->
+    <label for="question1">Kaip vertinate mūsų svetainės dizainą? (1-10):</label>
+    <input type="number" id="question1" name="question1" min="1" max="10" required><br>
+
+    <label for="question2">Kaip vertinate svetainės funkcionalumą? (1-10):</label>
+    <input type="number" id="question2" name="question2" min="1" max="10" required><br>
+
+    <label for="question3">Ar lengva buvo rasti norimą informaciją? (1-10):</label>
+    <input type="number" id="question3" name="question3" min="1" max="10" required><br>
+
+    <label for="question4">Kaip vertinate svetainės greitį? (1-10):</label>
+    <input type="number" id="question4" name="question4" min="1" max="10" required><br>
+
+    <label for="question5">Ar rekomenduotumėte mūsų svetainę kitiems? (1-10):</label>
+    <input type="number" id="question5" name="question5" min="1" max="10" required><br>
+
+    <!-- Išsaugojimo mygtukas -->
+    <button type="button" id="saveButton">Išsaugoti</button>
+    </form>
+    <div id="output" class="output" style="display: none;"></div>
+    </section>
+    <button id="scrollToTop" onclick="scrollToTop()">^<br>|</button>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <center><h2>Augustas Tamasiunas EAf-23</h2></center>
+        <button id="theme-toggle" onclick="toggleTheme()">Šviesus/Tamsus režimas</button>
+        <div class="clock" id="clock">
+
+        </div>
+    </footer>
+    <script src="function.js"></script>
+</main>
+</body>
+</html>
